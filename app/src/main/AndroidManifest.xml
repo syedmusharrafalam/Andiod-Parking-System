@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.parkingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".logInSignUp.LogIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".userpanel.activities.PlacesActivity" />
+        <activity android:name=".logInSignUp.SignUpActivity" />
+        <activity android:name=".userpanel.activities.ProfileUser" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".userpanel.activities.ParkingAreas"
+            android:label="@string/title_activity_parking_areas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".userpanel.activities.resturants.Resturant"
+            android:label="@string/title_activity_resturant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".userpanel.activities.shopingmall.ShopingMallActivity"
+            android:label="@string/title_activity_shoping_mall"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".userpanel.activities.publicpicnicplace.PicnicPlaceActivity"
+            android:label="@string/title_activity_picnic_place"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".bookinghistorypanel.BookingHistory" />
+        <activity android:name=".adminpanel.AdminProfile" />
+        <activity android:name=".adminpanel.UserInfo" />
+        <activity android:name=".adminpanel.BookingHistoryAdmin" />
+        <activity android:name=".feedbackUser.feedbackuser.FeedBackUser" />
+        <activity android:name=".feedbackUser.FeedBackUser" />
+        <activity android:name=".adminpanel.FeedBackAdmin" />
+        <activity android:name=".adminpanel.FeedBackReply" />
+        <activity android:name=".userpanels.AreaActivityUser"></activity>
+    </application>
+
+</manifest>

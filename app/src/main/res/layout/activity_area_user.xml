@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.parkingsystem.userpanels.AreaActivityUser">
+
+    <Button
+        android:id="@+id/calendars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calender"
+        />
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendars"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/calendars"
+        android:text="Time"
+        />
+    <TextView
+        android:id="@+id/tvTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTimes"
+        android:layout_toEndOf="@+id/dates"
+        />
+    <TextView
+        android:id="@+id/endTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTimes"
+        android:layout_toEndOf="@+id/tvTimes"
+        />
+    <Spinner
+        android:layout_toEndOf="@+id/btnTimes"
+        android:id="@+id/spinnerDurations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <Button
+        android:id="@+id/btnShows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dates"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:text="Show slots"
+        />
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyclerViews1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShows"
+        android:visibility="gone"
+        >
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

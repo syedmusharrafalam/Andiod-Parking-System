@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calender"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        />
+
+  <Button
+      android:id="@+id/btnTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@+id/calendar"
+      android:text="Time"
+      />
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTime"
+        android:layout_toEndOf="@+id/date"
+        />
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTime"
+        android:layout_toEndOf="@+id/tvTime"
+        />
+    <Spinner
+        android:layout_toEndOf="@+id/btnTime"
+        android:id="@+id/spinnerDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+  <Button
+      android:id="@+id/btnShow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/date"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="50dp"
+      android:text="Show slots"
+      />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnShow"
+    >
+
+
+
+</android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

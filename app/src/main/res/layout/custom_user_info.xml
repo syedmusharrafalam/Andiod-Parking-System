@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelProfileUserNameInfs"
+        android:text="User Name"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_toEndOf="@+id/labelProfileUserNameInfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valueProfileUserNameInfs"
+        android:text="User Name"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/labelProfileUserEmailInfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelProfileUserNameInfs"
+        android:text="Email Address"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueProfileUserNameInfs"
+        android:text="Email"
+        android:id="@+id/valueProfileUserEmailInfs"
+        android:layout_toEndOf="@+id/labelProfileUserNameInfs"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/lableProfileUserContactInfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelProfileUserEmailInfs"
+        android:layout_marginLeft="10dp"
+        android:text="Contact Number"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/valueProfileUserContactInfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueProfileUserEmailInfs"
+        android:layout_toEndOf="@+id/lableProfileUserContactInfs"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Contact"
+        />
+
+
+
+</RelativeLayout>

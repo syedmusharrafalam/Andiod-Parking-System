@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parkingsystem.userpanel.activities.ProfileUser">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelProfileUserName"
+        android:text="User Name"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_toEndOf="@+id/labelProfileUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valueProfileUserName"
+        android:text="User Name"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/labelProfileUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelProfileUserName"
+        android:text="Email Address"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueProfileUserName"
+        android:text="Email"
+        android:id="@+id/valueProfileUserEmail"
+        android:layout_toEndOf="@+id/labelProfileUserName"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/lableProfileUserContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelProfileUserEmail"
+        android:layout_marginLeft="10dp"
+        android:text="Contact Number"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/valueProfileUserContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueProfileUserEmail"
+        android:layout_toEndOf="@+id/lableProfileUserContact"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Contact"
+        />
+
+    <Button
+        android:id="@+id/userBooking"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Booking"
+        android:textSize="20dp"
+        android:layout_below="@+id/lableProfileUserContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+    <Button
+        android:id="@+id/userBookingHistorys"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Booking History"
+        android:textSize="20dp"
+        android:layout_below="@+id/userBooking"
+        android:layout_alignStart="@+id/userBooking"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userFeedBack"
+        android:text="FeedBack"
+        android:textSize="20dp"
+        android:layout_below="@+id/userBookingHistorys"
+        android:layout_alignStart="@+id/userBookingHistorys"
+        android:layout_marginTop="10dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.parkingsystem.adminpanel.AdminProfile">
+
+    <Button
+        android:id="@+id/userInf"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Users"
+        android:textSize="20dp"
+        android:layout_below="@+id/lableProfileUserContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+    <Button
+        android:id="@+id/userBookingHistorysAdm"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Booking History"
+        android:textSize="20dp"
+        android:layout_below="@+id/userInf"
+        android:layout_alignStart="@+id/userInf"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userFeedBackAdm"
+        android:text="FeedBack"
+        android:textSize="20dp"
+        android:layout_below="@+id/userBookingHistorysAdm"
+        android:layout_alignStart="@+id/userBookingHistorysAdm"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

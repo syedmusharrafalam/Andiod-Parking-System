@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ParkingSystem</string>
+    <array name="location">
+
+        <item>Resturant</item>
+        <item>Shopping Mall</item>
+        <item>Public Picnic Place</item>
+    </array>
+
+
+    <string name="title_activity_parking_areas">ParkingAreas</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_resturant">Resturant</string>
+    <string name="title_activity_shoping_mall">ShopingMallActivity</string>
+    <string name="title_activity_picnic_place">PicnicPlaceActivity</string>
+</resources>
